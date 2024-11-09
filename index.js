@@ -115,7 +115,7 @@ async function runJob() {
     archive.pipe(output)
 
     // first puzzle available: 11/21/1993
-    for (var y = 2007; y <= 2014; y++) {
+    for (var y = 2015; y <= 2024; y++) {
         fs.mkdirSync(__dirname + `/data/${y}`)
         for (var m = 1; m <= 12; m++) {
             for (var d = 1; d <= monthDays[m](y); d++) {
